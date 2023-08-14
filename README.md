@@ -51,7 +51,7 @@ Performance:
 AngularJS: AngularJS can have performance issues with larger applications due to its architecture and digest cycle.
 Angular: Angular has been designed with performance optimizations in mind, and it uses a more efficient change detection mechanism.
 
-01-B)
+Q1-B)
 
 @Input(): This decorator is used to pass data from a parent component to a child component. It allows a parent component to bind a value to a property of a child component. The child component can then use this property in its template or logic.
 
