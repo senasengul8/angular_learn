@@ -65,7 +65,9 @@ Q2)-a)
 
 ng generate component name-editor 
 <input [(ngModel)]="editedName" placeholder="Edit your name"> // inside name-editor.component.html
+
 ***********In the name-editor.component.ts :
+
 import { Component, Input } from '@angular/core';
 
 @Component({
