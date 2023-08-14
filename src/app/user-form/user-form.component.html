@@ -1,0 +1,19 @@
+<div>
+    <h2>User Form</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+      </div>
+      <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="user.lastName" required>
+      </div>
+      <div>
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" id="birthDate" name="birthDate" [(ngModel)]="user.birthDate" required>
+      </div>
+      <!-- Add other input fields as needed -->
+      <button type="submit">Save</button>
+    </form>
+  </div>
