@@ -107,7 +107,11 @@ Q2-c)
 <input [(ngModel)]="name" placeholder="Edit your name">
 ////
 By using two-way data binding with [(ngModel)], any changes made in the child component's input field will be automatically reflected in both the child and parent components. 
+
+
+
 Q3)
+
 
 ADVANTAGES:
 Improved Performance: The primary benefit of using the OnPush strategy is improved performance. With this strategy, Angular checks for changes only when input properties of a component change or when events occur within the component. This can significantly reduce the number of change detection cycles and improve the rendering performance of your application.
