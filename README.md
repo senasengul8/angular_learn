@@ -1,5 +1,5 @@
 # angular_learn
-Q2)
+task:
 
 1-Create Angular Project: 
 ng new AngularApp
@@ -60,7 +60,45 @@ Q1-B)
 
 @Output(): This decorator is used to emit events from a child component to a parent component. It allows a child component to define custom events and emit them with data. The parent component can listen to these events and react accordingly.
 
+Q2)-a)
+ng generate component name-editor 
+<input [(ngModel)]="editedName" placeholder="Edit your name"> // inside name-editor.component.html
+***********In the name-editor.component.ts :
+import { Component, Input } from '@angular/core';
 
+@Component({
+  selector: 'app-name-editor',
+  templateUrl: './name-editor.component.html',
+})
+export class NameEditorComponent {
+  @Input() name: string;
+  editedName: string;
+}
+  Q2)-b)
+ ********* app.component.html:
+  
+  <app-name-editor [name]="userName"></app-name-editor>
+<p>Your name: {{ userName }}</p>
+
+
+**********app.component.ts:
+  import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+})
+export class AppComponent {
+  userName = 'John Doe';
+}
+
+Q2-c)
+
+//Modify the child component's input element in name-editor.component.html to use two-way data binding using [(ngModel)]:
+//html
+<input [(ngModel)]="name" placeholder="Edit your name">
+////
+By using two-way data binding with [(ngModel)], any changes made in the child component's input field will be automatically reflected in both the child and parent components. 
 Q3)
 
 ADVANTAGES:
