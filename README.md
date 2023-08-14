@@ -61,6 +61,8 @@ Q1-B)
 @Output(): This decorator is used to emit events from a child component to a parent component. It allows a child component to define custom events and emit them with data. The parent component can listen to these events and react accordingly.
 
 Q2)-a)
+
+
 ng generate component name-editor 
 <input [(ngModel)]="editedName" placeholder="Edit your name"> // inside name-editor.component.html
 ***********In the name-editor.component.ts :
@@ -74,6 +76,8 @@ export class NameEditorComponent {
   @Input() name: string;
   editedName: string;
 }
+
+
   Q2)-b)
  ********* app.component.html:
   
@@ -91,6 +95,8 @@ export class NameEditorComponent {
 export class AppComponent {
   userName = 'John Doe';
 }
+
+
 
 Q2-c)
 
