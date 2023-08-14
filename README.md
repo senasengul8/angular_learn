@@ -1,28 +1,29 @@
 # angular_learn
-Create Angular Project: 
+Q2)
+
+1-Create Angular Project: 
 ng new AngularApp
 
-Create User Form Component:
+2-Create User Form Component:
 ng generate component user-form
 
-Create User Entity:
+3-Create User Entity:
 
 export class User {
   name: string;
   lastName: string;
   birthDate: Date;
-  // Add other properties as needed
 }
-In the user-form component, implement the logic to handle the form submission using Angular's HttpClient. Send a POST request to your .NET Core Web API's endpoint.
-Configure DbContext:
+4-In the user-form component, implement the logic to handle the form submission using Angular's HttpClient. Send a POST request to your .NET Core Web API's endpoint.
+5-Configure DbContext:
 In the DbContext class (e.g., AppDbContext), define a DbSet<User> property to represent the Users table.
-Migrate User Entity:
+6-Migrate User Entity:
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 
-Create a TestController with an HttpPost method named SaveUser that receives a User object.
+7-Create a TestController with an HttpPost method named SaveUser that receives a User object.
 
-Save User Entity to Database:
+8-Save User Entity to Database:
 In the SaveUser method, use the DbContext to add the received User object and save changes to the database.
 
 Q1)
@@ -59,6 +60,7 @@ Q1-B)
 
 
 Q3)
+
 ADVANTAGES:
 Improved Performance: The primary benefit of using the OnPush strategy is improved performance. With this strategy, Angular checks for changes only when input properties of a component change or when events occur within the component. This can significantly reduce the number of change detection cycles and improve the rendering performance of your application.
 
@@ -70,7 +72,7 @@ Complexity: The OnPush strategy requires a more thoughtful approach to designing
 
 Debugging: While OnPush can improve performance, it may also make debugging more challenging. Changes might not be detected as you expect, leading to potential confusion during development.
 
-Limited Automatic Change Detection: With the OnPush strategy, Angular's automatic change detection won't catch changes made directly to the component's properties. Ü
+Limited Automatic Change Detection: With the OnPush strategy, Angular's automatic change detection won't catch changes made directly to the component's properties. 
 
 
 
