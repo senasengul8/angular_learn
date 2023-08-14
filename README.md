@@ -13,10 +13,12 @@ export class User {
   name: string;
   lastName: string;
   birthDate: Date;
-}
+} // models folder
 4-In the user-form component, implement the logic to handle the form submission using Angular's HttpClient. Send a POST request to your .NET Core Web API's endpoint.
+
 5-Configure DbContext:
 In the DbContext class (e.g., AppDbContext), define a DbSet<User> property to represent the Users table.
+
 6-Migrate User Entity:
 dotnet ef migrations add InitialCreate
 dotnet ef database update
